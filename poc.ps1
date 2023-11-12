@@ -5,7 +5,7 @@ $currentDateUnix = Get-Date -UFormat "%s"
 $dateDiff = ((Get-Date).AddYears(100).ToUniversalTime() - (Get-Date "1970-01-01").ToUniversalTime()).TotalSeconds
 
 # Specify the path to your Git repository
-$repositoryPath = "C:\Dev\Git-History-Modifier" # Change this to your desired path
+$repositoryPath = "" # Change this to your desired path
 
 # Check if the Git repository exists, and if not, initialize one
 if (-not (Test-Path $repositoryPath -PathType Container)) {

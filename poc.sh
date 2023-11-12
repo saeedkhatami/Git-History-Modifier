@@ -7,7 +7,7 @@ currentDateUnix=$(date +%s)
 dateDiff=$(( ( $(date -d "$(date -u -d '1970-01-01 00:00:00' +'%Y-%m-%d %H:%M:%S')" +%s) + 100*365*24*3600 ) - currentDateUnix ))
 
 # Specify the path to your Git repository
-repositoryPath="C:\Dev\Git-History-Modifier" # Change this to your desired path
+repositoryPath="" # Change this to your desired path
 
 # Check if the Git repository exists, and if not, initialize one
 if [ ! -d "$repositoryPath/.git" ]; then
